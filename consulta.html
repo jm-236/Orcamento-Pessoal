@@ -19,7 +19,7 @@
 
 	</head>
 
-  <body onload="carregaListaDespesas()">
+  <body onload="mostrarListaDespesas()">
 
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
@@ -130,6 +130,27 @@
         </div>
       </div>
     </div>
+
+    <!-- Modal de avisos -->
+    <div class="modal fade" id="modalRegistraDespesa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-danger" id="div-titulo">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="texto-aviso">
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal" id="botao-confirmacao" onclick="window.location.reload()"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>	
 
 </html>
